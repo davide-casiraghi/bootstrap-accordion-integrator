@@ -26,7 +26,7 @@ class AccordionFactoryTest extends TestCase
         $accordion = new AccordionFactory();
         
         $bodyWithAccordions = $accordion->replace_accordion_strings_with_template($this->body);
-        $this->assertStringContainsString("<div class='accordion'><h3>Title First Slide</h3><div>This is the first slide. </div></div>",$bodyWithAccordions);
+        $this->assertStringContainsString("<div class='accordion'><h3 data-toggle='collapse' data-target='#collapse_1'>Title First Slide</h3><div class='collapse' id='collapse_1'>This is the first slide. </div></div>",$bodyWithAccordions);
     }
     
 }
