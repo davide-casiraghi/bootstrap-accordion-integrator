@@ -1,5 +1,5 @@
 {
-    "name": "davidecasiraghi/bootsrap-accordion-integrator",
+    "name": "davide-casiraghi/bootstrap-accordion-integrator",
     "description": "Add accordions in your application. The accordions are based on the Bootstrap 4 collapse component.",
     "type": "library",
     "license": "MIT",
@@ -23,15 +23,5 @@
     "require-dev": {
         "phpunit/phpunit": "^8.0",
         "orchestra/testbench": "~3.0"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Barryvdh\\Debugbar\\ServiceProvider"
-            ],
-            "aliases": {
-                "Debugbar": "Barryvdh\\Debugbar\\Facade"
-            }
-        }
     }
 }
