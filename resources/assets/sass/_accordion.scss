@@ -54,11 +54,13 @@ $borderColor: #c5c5c5;
         }
     }
     .accordion-body{
-        padding: 1rem;
-        
         border-width: 1px 0 0;
         border-style: solid;
         border-color: #c5c5c5;
+        
+        .accordion-body-content{
+            padding: 1rem;
+        }
     }
     
 }
