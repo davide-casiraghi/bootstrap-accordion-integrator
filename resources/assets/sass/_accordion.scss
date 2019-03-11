@@ -1,5 +1,6 @@
 
 $buttonColor: #f08e0d;
+$borderColor: #c5c5c5;
 
 .accordion{
     
@@ -9,6 +10,11 @@ $buttonColor: #f08e0d;
         
         font-size: 18px;
         font-weight: bold;
+        
+        border: 1px solid $borderColor;
+        
+        border-style: solid none none;
+        border-width: 1px medium 0;
         
         .icon{
             position: absolute;
@@ -48,7 +54,11 @@ $buttonColor: #f08e0d;
         }
     }
     .accordion-body{
-        padding: 1rem;    
+        padding: 1rem;
+        
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: #c5c5c5;
     }
     
 }
