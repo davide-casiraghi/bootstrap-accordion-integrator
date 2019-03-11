@@ -8,7 +8,7 @@ class AccordionFactory
     // The regex to identify accordion strings patterns
         protected $regex = "#(?:<p>)?\{slide[r]?=([^}]+)\}(?:</p>)?(.*?)(?:<p>)?\{/slide[r]?\}(?:</p>)?#s";
     
-        protected $sliderTemplate = "<div class='accordion'><h3 data-toggle='collapse' data-target='#collapse_{ACCORDION_ID}'>{SLIDER_TITLE}</h3><div class='collapse' id='collapse_{ACCORDION_ID}'>{SLIDER_CONTENT}</div></div>";
+        protected $sliderTemplate = "<div class='accordion'><div class='accordion-header' data-toggle='collapse' data-target='#collapse_{ACCORDION_ID}'><div class='icon'></div>{SLIDER_TITLE}</div><div class='accordion-body collapse' id='collapse_{ACCORDION_ID}'>{SLIDER_CONTENT}</div></div>";
 
 
     public function find_number_of_accordion_string_occurences($text)

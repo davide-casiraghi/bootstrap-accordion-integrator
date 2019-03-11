@@ -23,5 +23,15 @@
     "require-dev": {
         "phpunit/phpunit": "^8.0",
         "orchestra/testbench": "~3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DavideCasiraghi\\BootstrapAccordion\\AccordionServiceProvider"
+            ],
+            "aliases": {
+                "BootstrapAccordionIntegrator": "DavideCasiraghi\\BootstrapAccordion\\Facades\\BootstrapAccordionIntegrator"
+            }
+        }
     }
 }
