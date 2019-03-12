@@ -71,7 +71,42 @@ $borderColor: #c5c5c5;
                 -webkit-mask-size: 25px;
                 mask-size: 25px;
             }
-            
+            &.angle-fontawesome-free{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f106"; /* fa-chevron-down */
+                    font-family: 'FontAwesome';
+                    color: $buttonColor;
+                }
+            }
+            &.angle-fontawesome-pro{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f106"; /* fa-chevron-down */
+                    font-family: 'Font Awesome 5 Pro';
+                    color: $buttonColor;
+                }
+            }
+            &.caret-fontawesome-free{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f0d8"; /* fas fa-caret-down */
+                    font-family: 'FontAwesome';
+                    color: $buttonColor;
+                }
+            }
+            &.caret-fontawesome-pro{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f0d8"; /* fas fa-caret-down */
+                    font-family: 'Font Awesome 5 Pro';
+                    color: $buttonColor;
+                }
+            }
         }
         &[aria-expanded="true"]{
             .icon{
@@ -84,6 +119,28 @@ $borderColor: #c5c5c5;
                 &.arrow-full, &.arrow-empty{
                     transform: rotate(180deg);
                 }
+                &.angle-fontawesome-free{
+                    &:after {
+                        content: "\f107"; /* fa-chevron-up */
+                    }
+                }
+                &.angle-fontawesome-pro{
+                    &:after {
+                        content: "\f107"; /* fa-chevron-up */
+                    }
+                }
+                &.caret-fontawesome-free{
+                    &:after {
+                        content: "\f0d7"; /* fas fa-caret-up */
+                    }
+                }
+                &.caret-fontawesome-pro{
+                    &:after {
+                        content: "\f0d7"; /* fas fa-caret-up */
+                    }
+                }
+                
+                
             }
         }
     }
