@@ -23,10 +23,10 @@ class AccordionFactoryTest extends TestCase
     /** @test */
     public function it_replace_accordion_strings_with_template()
     {
-        $accordion = new AccordionFactory();
+        $accordion = new AccordionFactory("plus-minus-circle");
         
         $bodyWithAccordions = $accordion->replace_accordion_strings_with_template($this->body);
-        $this->assertStringContainsString("<div class='accordion'><div class='accordion-header' data-toggle='collapse' data-target='#collapse_1'><div class='icon {ICON_KIND}'></div>Title First Slide</div><div class='accordion-body collapse' id='collapse_1'><div class='accordion-body-content'>This is the first slide. </div></div></div>",$bodyWithAccordions);
+        $this->assertStringContainsString("<div class='accordion'><div class='accordion-header' data-toggle='collapse' data-target='#collapse_1'><div class='icon plus-minus-circle'></div>Title First Slide</div><div class='accordion-body collapse' id='collapse_1'><div class='accordion-body-content'>This is the first slide. </div></div></div>",$bodyWithAccordions);
     }
     
 }
