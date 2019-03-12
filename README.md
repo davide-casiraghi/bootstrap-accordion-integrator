@@ -38,7 +38,7 @@ composer require davide-casiraghi/bootstrap-accordion-integrator
 
 ## Usage
 
-Import the scss and the js in your project.
+Import from the vendor folder of the package the SCSS and the JS.
 
 Then to replace all the occurrance of the accordion snippets:
 
