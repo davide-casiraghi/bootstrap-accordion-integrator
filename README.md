@@ -49,9 +49,9 @@ $accordion->replace_accordion_strings_with_template($body);
 
 ### Icon styles (open/close)
 At the moment are available three icon styles that can be specified when the class get instantiated
-- plus-minus-circle(default)
-- arrow-full  
+- arrow-full (default)  
 - arrow-empty  
+- plus-minus-circle  
 
 ### Style SCSS with Laravel
 It's possible to customize the scss and the js publishing them in your Laravel application.  
