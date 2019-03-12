@@ -18,8 +18,6 @@ $borderColor: #c5c5c5;
         
         .icon{
             position: absolute;
-            top: 5px;
-            right: 5px;
 
             height: 40px;
             width: 40px;
@@ -32,6 +30,8 @@ $borderColor: #c5c5c5;
                 
             }
             &.plus-minus-circle{
+                top: 5px;
+                right: 5px;
                 &:after {
                     border: 2px solid $buttonColor;
                     border-radius: 100%;
@@ -48,21 +48,43 @@ $borderColor: #c5c5c5;
                     padding: 0px 10px;
                 }
             }
-            &.arrow-full{
-                background-color: red;
+            &.arrow-empty{
+                top: 10px;
+                right: 10px;
+                
+                background-color: $buttonColor;
     		    -webkit-mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
     		    mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
-    		    width: 50px;
-    		    height: 50px;
+    		    width: 30px;
+    		    height: 30px;
             }
+            &.arrow-full{
+                top: 15px;
+                right: 15px;
+                
+                background-color: $buttonColor;
+    		    -webkit-mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_compact.svg);
+    		    mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_compact.svg);
+    		    width: 25px;
+    		    height: 25px;
+                
+                -webkit-mask-size: 25px;
+                mask-size: 25px;
+            }
+            
         }
         &[aria-expanded="true"]{
-          .icon{
-              &:after {
-                  content: "-"!important;
-                  padding: 0px 13px;
-              }
-          }
+            .icon{
+                &.plus-minus-circle{
+                    &:after {
+                        content: "-"!important;
+                        padding: 0px 13px;
+                    }
+                }
+                &.arrow-full, &.arrow-empty{
+                    transform: rotate(180deg);
+                }
+            }
         }
     }
     .accordion-body{
