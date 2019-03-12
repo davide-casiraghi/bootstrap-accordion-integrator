@@ -1,5 +1,10 @@
 # Bootstrap Accordion Integrator
 
+[![Latest Stable Version](https://img.shields.io/packagist/v/davide-casiraghi/bootstrap-accordion-integrator.svg?style=flat-square)](https://packagist.org/packages/davide-casiraghi/bootstrap-accordion-integrator)
+
+
+
+
 Bootstrap Accordion Integrator is a PHP library to add accordions in your application.  
 The accordions are based on the Bootstrap 4 collapse component.
 
