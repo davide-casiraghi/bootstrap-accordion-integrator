@@ -28,20 +28,32 @@ $borderColor: #c5c5c5;
             overflow: visible!important;
 
             &:after {
-                /*background: #fff;*/
-                border: 2px solid $buttonColor;
-                border-radius: 100%;
-                box-sizing: border-box;
+                
+                
+            }
+            &.plus-minus-circle{
+                &:after {
+                    border: 2px solid $buttonColor;
+                    border-radius: 100%;
+                    box-sizing: border-box;
 
-                color: $buttonColor;
-                content: "+"!important;
-                
-                text-align: center;
-                font-size: 27px;
-                font-weight: 400;
-                
-                opacity: 1;
-                padding: 0px 10px;
+                    color: $buttonColor;
+                    content: "+"!important;
+                    
+                    text-align: center;
+                    font-size: 27px;
+                    font-weight: 400;
+                    
+                    opacity: 1;
+                    padding: 0px 10px;
+                }
+            }
+            &.arrow-full{
+                background-color: red;
+    		    -webkit-mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
+    		    mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
+    		    width: 50px;
+    		    height: 50px;
             }
         }
         &[aria-expanded="true"]{

@@ -10,6 +10,9 @@ class AccordionServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../resources/assets/sass' => resource_path('sass/vendor/bootstrap-accordion/')
         ], 'sass');
+        $this->publishes([
+            __DIR__ . '/../resources/assets/images' => public_path('vendor/bootstrap-accordion-integrator/images/')
+        ], 'images');
         
     }
     
