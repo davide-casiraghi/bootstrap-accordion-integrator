@@ -47,7 +47,7 @@ $accordion = new AccordionFactory('arrow-full');
 $accordion->replace_accordion_strings_with_template($body);
 ```
 
-### Available templates
+### Available open/close icon styles
 - arrow-full  
 - arrow-empty  
 - plus-minus-circle  
