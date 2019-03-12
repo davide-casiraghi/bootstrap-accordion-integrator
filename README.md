@@ -10,6 +10,22 @@
 Bootstrap Accordion Integrator is a PHP library to add accordions in your application.  
 The accordions are based on the Bootstrap 4 collapse component.
 
+The library replace all the occurance of this snippet
+```
+{slider=Title First Slide}This is the first slide. {/slider}
+```
+With the HTML code of a bootstrap 4 accordion.
+```
+<div class="accordion">
+    <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false">
+        <div class="icon arrow-full"></div>
+        Title First Slide
+    </div>
+    <div class="accordion-body collapse" id="collapse_1" style="">
+        <div class="accordion-body-content">This is the first slide. </div>
+    </div>
+</div>
+```
 
 
 ## Installation
