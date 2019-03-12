@@ -51,7 +51,7 @@ $accordion->replace_accordion_strings_with_template($body);
 At the moment are available these icon styles that can be specified when the class get instantiated
 - **arrow-full** (default - use svg with mask-image)  
 - **arrow-empty**  (use svg with mask-image) 
-- **plus-minus-circle**  (use svg with mask-image) 
+- **plus-minus-circle**  (use default font) 
 - **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
 - **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
 - **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
