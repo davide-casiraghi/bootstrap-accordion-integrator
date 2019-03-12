@@ -49,13 +49,13 @@ $accordion->replace_accordion_strings_with_template($body);
 
 ### Icon styles (open/close)
 At the moment are available three icon styles that can be specified when the class get instantiated
-- arrow-full (default)  
-- arrow-empty  
-- plus-minus-circle  
-- angle-fontawesome-pro (use Font Awesome Pro 5 font-family)
-- angle-fontawesome-free (use Font Awesome Free 4.7.0 font-family)
-- caret-fontawesome-pro (use Font Awesome Pro 5 font-family)
-- caret-fontawesome-free (use Font Awesome Free 4.7.0 font-family)
+- **arrow-full** (default - use svg with mask-image)  
+- **arrow-empty**  (use svg with mask-image) 
+- **plus-minus-circle**  (use svg with mask-image) 
+- **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
+- **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
 
 
 ### Style SCSS with Laravel
