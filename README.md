@@ -48,7 +48,7 @@ $accordion->replace_accordion_strings_with_template($body);
 ```
 
 ### Icon styles (open/close)
-At the moment are available three icon styles that can be specified when the class get instantiated
+At the moment are available these icon styles that can be specified when the class get instantiated
 - **arrow-full** (default - use svg with mask-image)  
 - **arrow-empty**  (use svg with mask-image) 
 - **plus-minus-circle**  (use svg with mask-image) 
