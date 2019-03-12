@@ -15,7 +15,7 @@ The library replace all the occurance of this snippet
 {slider=Title First Slide}This is the first slide. {/slider}
 ```
 With the HTML code of a bootstrap 4 accordion.
-```
+```html
 <div class="accordion">
     <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false">
         <div class="icon arrow-full"></div>
