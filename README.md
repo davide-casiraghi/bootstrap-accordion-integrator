@@ -14,7 +14,7 @@ The accordions are based on the Bootstrap 4 collapse component.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+To use the package you should import it trough composer.
 
 ```bash
 composer require davide-casiraghi/bootstrap-accordion-integrator
