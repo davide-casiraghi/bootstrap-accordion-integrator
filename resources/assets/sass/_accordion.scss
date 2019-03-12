@@ -48,7 +48,7 @@ $borderColor: #c5c5c5;
                     padding: 0px 10px;
                 }
             }
-            &.arrow-empty{
+            &.angle-svg{
                 top: 10px;
                 right: 10px;
                 
@@ -58,7 +58,7 @@ $borderColor: #c5c5c5;
     		    width: 30px;
     		    height: 30px;
             }
-            &.arrow-full{
+            &.caret-svg{
                 top: 15px;
                 right: 15px;
                 
@@ -116,7 +116,7 @@ $borderColor: #c5c5c5;
                         padding: 0px 13px;
                     }
                 }
-                &.arrow-full, &.arrow-empty{
+                &.caret-svg, &.angle-svg{
                     transform: rotate(180deg);
                 }
                 &.angle-fontawesome-free{

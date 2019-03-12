@@ -18,7 +18,7 @@ With the HTML code of a bootstrap 4 accordion.
 ```html
 <div class="accordion">
     <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse_1" aria-expanded="false">
-        <div class="icon arrow-full"></div>
+        <div class="icon caret-svg"></div>
         Title First Slide
     </div>
     <div class="accordion-body collapse" id="collapse_1" style="">
@@ -43,14 +43,14 @@ Import from the vendor folder of the package the SCSS and the JS.
 Then to replace all the occurrance of the accordion snippets:
 
 ```php
-$accordion = new AccordionFactory('arrow-full');
+$accordion = new AccordionFactory('caret-svg');
 $accordion->replace_accordion_strings_with_template($body);
 ```
 
 ### Icon styles (open/close)
 At the moment are available these icon styles that can be specified when the class get instantiated
-- **arrow-full** (default - use svg with mask-image)  
-- **arrow-empty**  (use svg with mask-image) 
+- **caret-svg** (default - use svg with mask-image)  
+- **angle-svg**  (use svg with mask-image) 
 - **plus-minus-circle**  (use default font) 
 - **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
 - **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)

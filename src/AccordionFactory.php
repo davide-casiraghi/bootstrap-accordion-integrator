@@ -4,7 +4,7 @@ namespace DavideCasiraghi\BootstrapAccordion;
 
 class AccordionFactory
 {
-    protected $icon_kind = 'arrow-full';
+    protected $icon_kind = 'caret-svg';
 
     // The regex to identify accordion strings patterns
     protected $regex = "#(?:<p>)?\{accordion?=([^}]+)\}(?:</p>)?(.*?)(?:<p>)?\{/accordion?\}(?:</p>)?#s";
