@@ -48,17 +48,22 @@ $accordion->replace_accordion_strings_with_template($body);
 ```
 
 ### Icon styles (open/close)
-At the moment are available three icon styles that can be specified when the class get instantiated
-- arrow-full (default)  
-- arrow-empty  
-- plus-minus-circle  
+At the moment are available these icon styles that can be specified when the class get instantiated
+- **arrow-full** (default - use svg with mask-image)  
+- **arrow-empty**  (use svg with mask-image) 
+- **plus-minus-circle**  (use default font) 
+- **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
+- **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
+
 
 ### Style SCSS with Laravel
 It's possible to customize the scss and the js publishing them in your Laravel application.  
 
 ```php artisan vendor:publish```
 
-This command will publish in your application this directories:
+This command will publish in your application this folders:
 - /resources/scss/vendor/bootstrap-accordion/
 - /resources/js/vendor/bootstrap-accordion/
 - /public/vendor/bootstrap-accordion-integrator/images/
