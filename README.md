@@ -58,7 +58,7 @@ It's possible to customize the scss and the js publishing them in your Laravel a
 
 ```php artisan vendor:publish```
 
-Then will be published this directories:
+This command will publish in your application this directories:
 - /resources/scss/vendor/bootstrap-accordion/
 - /resources/js/vendor/bootstrap-accordion/
 - /public/vendor/bootstrap-accordion-integrator/images/
