@@ -39,7 +39,12 @@ $accordion->replace_accordion_strings_with_template($body);
 ### Style SCSS with Laravel
 It's possible to customize the scss and the js publishing them in your Laravel application.  
 
-```php artisan vendor:publish --force```
+```php artisan vendor:publish```
+
+Then will be published this directories:
+- /resources/scss/vendor/bootstrap-accordion/
+- /resources/js/vendor/bootstrap-accordion/
+- /public/vendor/bootstrap-accordion-integrator/images/
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
