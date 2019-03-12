@@ -7,7 +7,7 @@ class AccordionFactory
     protected $icon_kind = 'arrow-full';
 
     // The regex to identify accordion strings patterns
-    protected $regex = "#(?:<p>)?\{slide[r]?=([^}]+)\}(?:</p>)?(.*?)(?:<p>)?\{/slide[r]?\}(?:</p>)?#s";
+    protected $regex = "#(?:<p>)?\{accordion?=([^}]+)\}(?:</p>)?(.*?)(?:<p>)?\{/accordion?\}(?:</p>)?#s";
 
     protected $sliderTemplate = "<div class='accordion'><div class='accordion-header' data-toggle='collapse' data-target='#collapse_{ACCORDION_ID}'><div class='icon {ICON_KIND}'></div>{SLIDER_TITLE}</div><div class='accordion-body collapse' id='collapse_{ACCORDION_ID}'><div class='accordion-body-content'>{SLIDER_CONTENT}</div></div></div>";
 
@@ -20,7 +20,7 @@ class AccordionFactory
 
     public function find_number_of_accordion_string_occurences($text)
     {
-        return substr_count($text, '{slide');
+        return substr_count($text, '{accordion');
     }
 
     public function replace_accordion_strings_with_template($text)

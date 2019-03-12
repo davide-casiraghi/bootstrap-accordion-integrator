@@ -7,8 +7,8 @@ use DavideCasiraghi\BootstrapAccordion\AccordionFactory;
 
 class AccordionFactoryTest extends TestCase
 {
-    protected $body = '{slider=Title First Slide}This is the first slide. {/slider}
-                       {slider=Title Second Slide}This is the second slide. {/slider}';
+    protected $body = '{accordion=Title First Slide}This is the first slide. {/accordion}
+                       {accordion=Title Second Slide}This is the second slide. {/accordion}';
 
     /** @test */
     public function it_finds_accordion_strings()
