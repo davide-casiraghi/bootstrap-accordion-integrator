@@ -57,8 +57,9 @@ At the moment are available these icon styles that can be specified when the cla
 - **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
 - **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
 
+## With Laravel
 
-### Style SCSS with Laravel
+### Publish the JS, CSS and IMAGES
 It's possible to customize the scss and the js publishing them in your Laravel application.  
 
 ```php artisan vendor:publish```
@@ -67,6 +68,20 @@ This command will publish in your application this folders:
 - /resources/scss/vendor/bootstrap-accordion/
 - /resources/js/vendor/bootstrap-accordion/
 - /public/vendor/bootstrap-accordion-integrator/images/
+
+### Load the JS file
+In your app.js file you can require the accordion.js file like this:
+
+```
+require('./bootstrap');
+window.Vue = require('vue');
+
+require('./vendor/bootstrap-accordion/accordion');
+
+window.myApp = new Vue({  
+    el: '#app'
+});
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
