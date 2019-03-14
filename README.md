@@ -56,6 +56,7 @@ At the moment are available these icon styles that can be specified when the cla
 - **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
 - **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
 
+To use FontAwesome styles you need FontAwesome already loaded in your application.
 
 ## Load the CSS and JS files
 
