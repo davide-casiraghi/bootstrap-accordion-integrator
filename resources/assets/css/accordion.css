@@ -1,0 +1,123 @@
+.accordion .accordion-header {
+  position: relative;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #c5c5c5;
+  border-style: solid none none;
+  border-width: 1px medium 0;
+}
+.accordion .accordion-header .icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  text-indent: 0 !important;
+  overflow: visible !important;
+}
+.accordion .accordion-header .icon.plus-minus-circle {
+  top: 5px;
+  right: 5px;
+}
+.accordion .accordion-header .icon.plus-minus-circle:after {
+  border: 2px solid #f08e0d;
+  border-radius: 100%;
+  box-sizing: border-box;
+  color: #f08e0d;
+  content: "+" !important;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 400;
+  opacity: 1;
+  padding: 0px 10px;
+}
+.accordion .accordion-header .icon.arrow-empty {
+  top: 10px;
+  right: 10px;
+  background-color: #f08e0d;
+  -webkit-mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
+  mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
+  width: 30px;
+  height: 30px;
+}
+.accordion .accordion-header .icon.arrow-full {
+  top: 15px;
+  right: 15px;
+  background-color: #f08e0d;
+  -webkit-mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_compact.svg);
+  mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_compact.svg);
+  width: 25px;
+  height: 25px;
+  -webkit-mask-size: 25px;
+  mask-size: 25px;
+}
+.accordion .accordion-header .icon.angle-fontawesome-free {
+  top: 15px;
+  right: 0px;
+}
+.accordion .accordion-header .icon.angle-fontawesome-free:after {
+  content: "\f106";
+  /* fa-chevron-down */
+  font-family: 'FontAwesome';
+  color: #f08e0d;
+}
+.accordion .accordion-header .icon.angle-fontawesome-pro {
+  top: 15px;
+  right: 0px;
+}
+.accordion .accordion-header .icon.angle-fontawesome-pro:after {
+  content: "\f106";
+  /* fa-chevron-down */
+  font-family: 'Font Awesome 5 Pro';
+  color: #f08e0d;
+}
+.accordion .accordion-header .icon.caret-fontawesome-free {
+  top: 15px;
+  right: 0px;
+}
+.accordion .accordion-header .icon.caret-fontawesome-free:after {
+  content: "\f0d8";
+  /* fas fa-caret-down */
+  font-family: 'FontAwesome';
+  color: #f08e0d;
+}
+.accordion .accordion-header .icon.caret-fontawesome-pro {
+  top: 15px;
+  right: 0px;
+}
+.accordion .accordion-header .icon.caret-fontawesome-pro:after {
+  content: "\f0d8";
+  /* fas fa-caret-down */
+  font-family: 'Font Awesome 5 Pro';
+  color: #f08e0d;
+}
+.accordion .accordion-header[aria-expanded="true"] .icon.plus-minus-circle:after {
+  content: "-" !important;
+  padding: 0px 13px;
+}
+.accordion .accordion-header[aria-expanded="true"] .icon.arrow-full, .accordion .accordion-header[aria-expanded="true"] .icon.arrow-empty {
+  transform: rotate(180deg);
+}
+.accordion .accordion-header[aria-expanded="true"] .icon.angle-fontawesome-free:after {
+  content: "\f107";
+  /* fa-chevron-up */
+}
+.accordion .accordion-header[aria-expanded="true"] .icon.angle-fontawesome-pro:after {
+  content: "\f107";
+  /* fa-chevron-up */
+}
+.accordion .accordion-header[aria-expanded="true"] .icon.caret-fontawesome-free:after {
+  content: "\f0d7";
+  /* fas fa-caret-up */
+}
+.accordion .accordion-header[aria-expanded="true"] .icon.caret-fontawesome-pro:after {
+  content: "\f0d7";
+  /* fas fa-caret-up */
+}
+.accordion .accordion-body {
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-color: #c5c5c5;
+}
+.accordion .accordion-body .accordion-body-content {
+  padding: 1rem;
+}
