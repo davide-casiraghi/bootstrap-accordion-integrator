@@ -70,7 +70,7 @@ This command will publish in your application this folders:
 - /public/vendor/bootstrap-accordion-integrator/images/
 
 ### Load the JS file
-In your app.js file you can require the accordion.js file before the Vue class get instanciated:
+In your app.js file you can require the accordion.js file before the Vue object get instanciated:
 
 ```
 require('./bootstrap');
