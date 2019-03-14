@@ -8,7 +8,7 @@
 
 
 **Bootstrap 4 Accordion Integrator** is a PHP library to add accordions in your application.  
-The accordions are based on the Bootstrap 4 collapse component.
+The accordions are based on the Bootstrap 4 **collapse component**.
 
 The library replace all the occurances of this snippet
 ```
