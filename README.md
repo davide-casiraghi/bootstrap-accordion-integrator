@@ -43,7 +43,7 @@ To replace all the occurrance of the accordion snippets:
 
 ```php
 $accordion = new AccordionFactory('caret-svg');
-$accordion->replace_accordion_strings_with_template($body);
+$accordion->replace_accordion_strings_with_template($text);
 ```
 
 ## Icon styles (open/close)
