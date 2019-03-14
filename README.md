@@ -36,6 +36,27 @@ To use the package you should import it trough composer.
 composer require davide-casiraghi/bootstrap-accordion-integrator
 ```
 
+
+## Usage
+
+To replace all the occurrance of the accordion snippets:
+
+```php
+$accordion = new AccordionFactory('caret-svg');
+$accordion->replace_accordion_strings_with_template($body);
+```
+
+## Icon styles (open/close)
+At the moment are available these icon styles that can be specified when the class get instantiated
+- **caret-svg** (default - use svg with mask-image)  
+- **angle-svg**  (use svg with mask-image) 
+- **plus-minus-circle**  (use default font) 
+- **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
+- **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
+
+
 ## Load the CSS and JS files
 
 ### Without Laravel
@@ -66,28 +87,6 @@ window.myApp = new Vue({
     el: '#app'
 });
 ```
-
-
-## Usage
-
-Import from the vendor folder of the package the SCSS and the JS.
-
-Then to replace all the occurrance of the accordion snippets:
-
-```php
-$accordion = new AccordionFactory('caret-svg');
-$accordion->replace_accordion_strings_with_template($body);
-```
-
-### Icon styles (open/close)
-At the moment are available these icon styles that can be specified when the class get instantiated
-- **caret-svg** (default - use svg with mask-image)  
-- **angle-svg**  (use svg with mask-image) 
-- **plus-minus-circle**  (use default font) 
-- **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
-- **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
-- **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
-- **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
