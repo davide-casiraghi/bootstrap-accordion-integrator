@@ -12,7 +12,7 @@ The accordions are based on the Bootstrap 4 **collapse component**.
 
 The library replace all the occurances of this snippet
 ```
-{slider=Title First Slide}This is the first slide. {/slider}
+{accordion=Title First Slide}This is the first slide. {/accordion}
 ```
 With the HTML code of a bootstrap 4 accordion.
 ```html
