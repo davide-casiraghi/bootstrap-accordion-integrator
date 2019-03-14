@@ -1,117 +1,157 @@
 
-
 $buttonColor: #f08e0d;
+$borderColor: #c5c5c5;
 
-/**** JqueryUI Accordion - CSS override - plugin/contents/jw_ts ****/
-
-
-/****** ACCORDION ******/
-
-/* Slides */
 .accordion{
-    &.ui-state-default{
-        background-color: transparent!important;
-    }
-    &.ui-accordion {
-        .ui-accordion-icons{
-            border-style: solid none none;
-            border-width: 1px medium 0;
-            padding: 24px 60px 24px 0;
+    
+    .accordion-header{
+        position: relative;
+        padding: 1rem;
+        
+        font-size: 18px;
+        font-weight: bold;
+        
+        border: 1px solid $borderColor;
+        
+        border-style: solid none none;
+        border-width: 1px medium 0;
+        
+        .icon{
+            position: absolute;
 
-            /*font-family: $font-family-avenirNextDemi;*/
-            font-family: "SF Pro Display Semibold", Helvetica, sans-serif;
-            font-size: 1.2rem;
-            border-radius: 0;
-        }
-        .ui-accordion-header{
-            border-color: #c5c5c5;
-            &.ui-state-active{
-                background-color: transparent;
+            height: 40px;
+            width: 40px;
+            
+            text-indent: 0!important;
+            overflow: visible!important;
+
+            &:after {
+                
+                
             }
-
-            .ui-icon{
-                width: 40px!important;
-                height: 40px!important;
-                text-indent: 0!important;
-                overflow: visible!important;
-
+            &.plus-minus-circle{
+                top: 5px;
+                right: 5px;
                 &:after {
-                    background: #fff;
                     border: 2px solid $buttonColor;
                     border-radius: 100%;
                     box-sizing: border-box;
 
                     color: $buttonColor;
                     content: "+"!important;
-                    /*font-family: $font-family-avenirNext;*/
-                    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
-
-
+                    
                     text-align: center;
                     font-size: 27px;
                     font-weight: 400;
-
-                    line-height: 33px;
+                    
                     opacity: 1;
-                    padding: 1px 0 0 0px;
-
-                    position: absolute;
-                    top: -8px;
-                    right: 0px;
-
-                    height: 40px;
-                    width: 40px;
+                    padding: 0px 10px;
                 }
-
             }
-
-            .ui-accordion-header-icon {
-                margin-top: 0!important;
-                position: absolute;
-                right: .5em;
-                top: inherit!important;
-                background-image: none;
+            &.arrow-empty{
+                top: 10px;
+                right: 10px;
+                
+                background-color: $buttonColor;
+    		    -webkit-mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
+    		    mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_no_compact.svg);
+    		    width: 30px;
+    		    height: 30px;
             }
-
-            &.ui-state-active {
-                .ui-icon{
-                    &:after{
-                        content: "-"!important;
-                    }
+            &.arrow-full{
+                top: 15px;
+                right: 15px;
+                
+                background-color: $buttonColor;
+    		    -webkit-mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_compact.svg);
+    		    mask-image: url(/vendor/bootstrap-accordion-integrator/images/arrow_up_compact.svg);
+    		    width: 25px;
+    		    height: 25px;
+                
+                -webkit-mask-size: 25px;
+                mask-size: 25px;
+            }
+            &.angle-fontawesome-free{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f106"; /* fa-chevron-down */
+                    font-family: 'FontAwesome';
+                    color: $buttonColor;
+                }
+            }
+            &.angle-fontawesome-pro{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f106"; /* fa-chevron-down */
+                    font-family: 'Font Awesome 5 Pro';
+                    color: $buttonColor;
+                }
+            }
+            &.caret-fontawesome-free{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f0d8"; /* fas fa-caret-down */
+                    font-family: 'FontAwesome';
+                    color: $buttonColor;
+                }
+            }
+            &.caret-fontawesome-pro{
+                top: 15px;
+                right: 0px;
+                &:after {
+                    content: "\f0d8"; /* fas fa-caret-down */
+                    font-family: 'Font Awesome 5 Pro';
+                    color: $buttonColor;
                 }
             }
         }
-
-        .ui-accordion-content{
-            border-width: 1px 0 0 0;
-            border-style: solid;
-            border-color: #c5c5c5;
-
-            padding: 2rem;
-            height: auto!important;
-            
-            /*font-family: "Avenir Next", Arial, Helvetica, sans-serif;
-            line-height: 1.5rem;*/
-            
-            ul, > ol{
-                margin-top: 1rem;
-                li{
-                    margin-bottom: 0.3rem;
-                    ul{
-                        margin-top: 0.5rem;
-                        margin-bottom: 0.8rem;
-                        li{
-                            margin-bottom: 0.3rem;
-                        }
+        &[aria-expanded="true"]{
+            .icon{
+                &.plus-minus-circle{
+                    &:after {
+                        content: "-"!important;
+                        padding: 0px 13px;
                     }
                 }
-            }
-
-            a{
-                /*color: $blu!important;*/
+                &.arrow-full, &.arrow-empty{
+                    transform: rotate(180deg);
+                }
+                &.angle-fontawesome-free{
+                    &:after {
+                        content: "\f107"; /* fa-chevron-up */
+                    }
+                }
+                &.angle-fontawesome-pro{
+                    &:after {
+                        content: "\f107"; /* fa-chevron-up */
+                    }
+                }
+                &.caret-fontawesome-free{
+                    &:after {
+                        content: "\f0d7"; /* fas fa-caret-up */
+                    }
+                }
+                &.caret-fontawesome-pro{
+                    &:after {
+                        content: "\f0d7"; /* fas fa-caret-up */
+                    }
+                }
+                
+                
             }
         }
     }
+    .accordion-body{
+        border-width: 1px 0 0;
+        border-style: solid;
+        border-color: #c5c5c5;
+        
+        .accordion-body-content{
+            padding: 1rem;
+        }
+    }
+    
 }
-
-/**** end ACCORDION ****/
