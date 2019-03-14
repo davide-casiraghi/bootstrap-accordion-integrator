@@ -38,6 +38,9 @@ composer require davide-casiraghi/bootstrap-accordion-integrator
 
 ## Load the CSS and JS files
 
+### Without Laravel
+You can import the JS and the CSS files in the vendor/bootstrap-accordion/ folder.
+
 ### With Laravel
 
 #### Publish the JS, CSS and IMAGES
