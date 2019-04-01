@@ -25,6 +25,6 @@ class AccordionFactoryTest extends TestCase
         $accordion = new AccordionFactory('plus-minus-circle');
 
         $bodyWithAccordions = $accordion->replace_accordion_strings_with_template($this->body);
-        $this->assertStringContainsString("<div class='accordion'><div class='accordion-header' data-toggle='collapse' data-target='#collapse_1'><div class='icon plus-minus-circle'></div>Title First Slide</div><div class='accordion-body collapse' id='collapse_1'><div class='accordion-body-content'>This is the first slide. </div></div></div>", $bodyWithAccordions);
+        $this->assertStringContainsString("<div class='accordion'><div class='accordion-header' id='1' data-toggle='collapse' data-target='#collapse_1'><div title='1' class='icon plus-minus-circle'></div>Title First Slide</div><div class='accordion-body collapse' id='collapse_1'><div class='accordion-body-content'>This is the first slide. </div></div></div>", $bodyWithAccordions);
     }
 }
