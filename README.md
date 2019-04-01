@@ -3,6 +3,8 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/davide-casiraghi/bootstrap-accordion-integrator.svg?style=flat-square)](https://packagist.org/packages/davide-casiraghi/bootstrap-accordion-integrator)
 <a href="https://travis-ci.org/davide-casiraghi/bootstrap-accordion-integrator"><img src="https://travis-ci.org/davide-casiraghi/bootstrap-accordion-integrator.svg" alt="Build Status"></a>
 [![StyleCI](https://styleci.io/repos/175197548/shield?style=flat-square)](https://styleci.io/repos/175197548)
+[![Coverage Status](https://scrutinizer-ci.com/g/davide-casiraghi/bootstrap-accordion-integrator/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/davide-casiraghi/bootstrap-accordion-integrator/)
+[![GitHub last commit](https://img.shields.io/github/last-commit/davide-casiraghi/bootstrap-accordion-integrator.svg)](https://github.com/davide-casiraghi/bootstrap-accordion-integrator) 
 
 
 
@@ -12,7 +14,7 @@ The accordions are based on the Bootstrap 4 **collapse component**.
 
 The library replace all the occurances of this snippet
 ```
-{slider=Title First Slide}This is the first slide. {/slider}
+{accordion=Title First Slide}This is the first slide. {/accordion}
 ```
 With the HTML code of a bootstrap 4 accordion.
 ```html
@@ -36,7 +38,32 @@ To use the package you should import it trough composer.
 composer require davide-casiraghi/bootstrap-accordion-integrator
 ```
 
+
+## Usage
+
+To replace all the occurrance of the accordion snippets:
+
+```php
+$accordion = new AccordionFactory('caret-svg');
+$accordion->replace_accordion_strings_with_template($text);
+```
+
+## Icon styles (open/close)
+At the moment are available these icon styles that can be specified when the class get instantiated
+- **caret-svg** (default - use svg with mask-image)  
+- **angle-svg**  (use svg with mask-image) 
+- **plus-minus-circle**  (use default font) 
+- **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
+- **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
+- **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
+
+To use FontAwesome styles you need FontAwesome already loaded in your application.
+
 ## Load the CSS and JS files
+
+### Without Laravel
+You can import the JS and the CSS files in the vendor/bootstrap-accordion/ folder.
 
 ### With Laravel
 
@@ -63,28 +90,6 @@ window.myApp = new Vue({
     el: '#app'
 });
 ```
-
-
-## Usage
-
-Import from the vendor folder of the package the SCSS and the JS.
-
-Then to replace all the occurrance of the accordion snippets:
-
-```php
-$accordion = new AccordionFactory('caret-svg');
-$accordion->replace_accordion_strings_with_template($body);
-```
-
-### Icon styles (open/close)
-At the moment are available these icon styles that can be specified when the class get instantiated
-- **caret-svg** (default - use svg with mask-image)  
-- **angle-svg**  (use svg with mask-image) 
-- **plus-minus-circle**  (use default font) 
-- **angle-fontawesome-pro** (use Font Awesome Pro 5 font-family)
-- **angle-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
-- **caret-fontawesome-pro** (use Font Awesome Pro 5 font-family)
-- **caret-fontawesome-free** (use Font Awesome Free 4.7.0 font-family)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
