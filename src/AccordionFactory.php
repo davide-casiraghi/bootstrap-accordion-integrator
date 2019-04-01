@@ -9,7 +9,7 @@ class AccordionFactory
     // The regex to identify accordion strings patterns
     protected $regex = "#(?:<p>)?\{accordion?=([^}]+)\}(?:</p>)?(.*?)(?:<p>)?\{/accordion?\}(?:</p>)?#s";
 
-    protected $sliderTemplate = "<div class='accordion'><div class='accordion-header' id='{ACCORDION_ID}' data-toggle='collapse' data-target='#collapse_{ACCORDION_ID}'><div class='icon {ICON_KIND}'></div>{SLIDER_TITLE}</div><div class='accordion-body collapse' id='collapse_{ACCORDION_ID}'><div class='accordion-body-content'>{SLIDER_CONTENT}</div></div></div>";
+    protected $sliderTemplate = "<div class='accordion'><div class='accordion-header' id='{ACCORDION_ID}' data-toggle='collapse' data-target='#collapse_{ACCORDION_ID}'><div title='{ACCORDION_ID}' class='icon {ICON_KIND}'></div>{SLIDER_TITLE}</div><div class='accordion-body collapse' id='collapse_{ACCORDION_ID}'><div class='accordion-body-content'>{SLIDER_CONTENT}</div></div></div>";
 
     public function __construct(string $icon_kind = '')
     {
