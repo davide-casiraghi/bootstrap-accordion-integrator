@@ -38,10 +38,13 @@ $( document ).ready(function() {
             if(jQuery(this).children('.accordion-body').children('.accordion-body-content').children(':first-child').is('br')) {
                 jQuery(this).children('.accordion-body').children('.accordion-body-content').children('br:first-child').remove();
             }
-        
-        
-        
         });
+        
+        // If a #number (anchor) is present in the link, open that accordion
+        if(window.location.hash) {
+            var hash = window.location.hash.substring(1); 
+            $('#collapse_'+hash).collapse('show');
+        } 
         
     //}
 });
