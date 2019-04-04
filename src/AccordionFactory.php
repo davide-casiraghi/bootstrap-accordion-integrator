@@ -18,7 +18,7 @@ class AccordionFactory
         }
     }
 
-    public static function find_number_of_accordion_string_occurences($text)
+    public function find_number_of_accordion_string_occurences($text)
     {
         return substr_count($text, '{accordion');
     }
