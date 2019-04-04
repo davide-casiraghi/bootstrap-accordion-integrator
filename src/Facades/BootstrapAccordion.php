@@ -1,10 +1,10 @@
 <?php
 
-namespace DavideCasiraghi\BootstrapAccordion;
+namespace DavideCasiraghi\BootstrapAccordion\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class BootstrapAccordionIntegrator extends Facade
+class BootstrapAccordion extends Facade
 {
     protected static function getFacadeAccessor()
     {

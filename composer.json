@@ -30,7 +30,7 @@
                 "DavideCasiraghi\\BootstrapAccordion\\AccordionServiceProvider"
             ],
             "aliases": {
-                "BootstrapAccordionIntegrator": "DavideCasiraghi\\BootstrapAccordion\\Facades\\BootstrapAccordionIntegrator"
+                "BootstrapAccordionIntegrator": "DavideCasiraghi\\BootstrapAccordion\\BootstrapAccordion"
             }
         }
     }
