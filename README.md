@@ -4,8 +4,8 @@
 <a href="https://travis-ci.org/davide-casiraghi/bootstrap-accordion-integrator"><img src="https://travis-ci.org/davide-casiraghi/bootstrap-accordion-integrator.svg" alt="Build Status"></a>
 [![StyleCI](https://styleci.io/repos/175197548/shield?style=flat-square)](https://styleci.io/repos/175197548)
 [![Coverage Status](https://scrutinizer-ci.com/g/davide-casiraghi/bootstrap-accordion-integrator/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/davide-casiraghi/bootstrap-accordion-integrator/)
-[![GitHub last commit](https://img.shields.io/github/last-commit/davide-casiraghi/bootstrap-accordion-integrator.svg)](https://github.com/davide-casiraghi/bootstrap-accordion-integrator) 
 <a href="https://codeclimate.com/github/davide-casiraghi/bootstrap-accordion-integrator/maintainability"><img src="https://api.codeclimate.com/v1/badges/de95f0b5560cdfb79d2c/maintainability" /></a>
+[![GitHub last commit](https://img.shields.io/github/last-commit/davide-casiraghi/bootstrap-accordion-integrator.svg)](https://github.com/davide-casiraghi/bootstrap-accordion-integrator) 
 
 
 
