@@ -3,14 +3,13 @@
 namespace DavideCasiraghi\BootstrapAccordion\Tests;
 
 use Orchestra\Testbench\TestCase;
-use DavideCasiraghi\BootstrapAccordion\Facades\BootstrapAccordion;
 use DavideCasiraghi\BootstrapAccordion\AccordionServiceProvider;
+use DavideCasiraghi\BootstrapAccordion\Facades\BootstrapAccordion;
 
 class LaravelTest extends TestCase
 {
     protected $body = '{accordion=Title First Slide}This is the first slide. {/accordion}
                        {accordion=Title Second Slide}This is the second slide. {/accordion}';
-
 
     protected function getPackageProviders($app)
     {
