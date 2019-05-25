@@ -31,4 +31,11 @@ class LaravelTest extends TestCase
         $testExtension = BootstrapAccordion::find_number_of_accordion_string_occurences($this->body);
         $this->assertStringContainsString($testExtension, 2);
     }
+    
+    /** @test */
+    public function it_replace_accordion_strings_with_template_using_facade()
+    {
+        $bodyWithAccordions = BootstrapAccordion::getAccordions($this->body, 'plus-minus-circle');
+        $this->assertStringContainsString("<div class='accordion'><div class='accordion-header' id='1' data-toggle='collapse' data-target='#collapse_1'><div title='1' class='icon plus-minus-circle'></div>Title First Slide</div><div class='accordion-body collapse' id='collapse_1'><div class='accordion-body-content'>This is the first slide. </div></div></div>", $bodyWithAccordions);
+    }
 }

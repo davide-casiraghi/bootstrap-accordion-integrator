@@ -46,4 +46,13 @@ class AccordionFactory
 
         return $text;
     }
+    
+    
+    public function getAccordions($text, string $icon_kind = ''){
+        
+        $accordion = new AccordionFactory($icon_kind);
+        $ret = $accordion->replace_accordion_strings_with_template($text);
+        
+        return $ret;
+    }
 }
