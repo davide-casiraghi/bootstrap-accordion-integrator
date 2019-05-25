@@ -49,6 +49,11 @@ $accordion = new AccordionFactory('caret-svg');
 $accordion->replace_accordion_strings_with_template($text);
 ```
 
+or using the facade
+```php
+$text = BootstrapAccordion::getAccordions($text, 'plus-minus-circle');
+```
+
 ## Icon styles (open/close)
 At the moment are available these icon styles that can be specified when the class get instantiated
 - **caret-svg** (default - use svg with mask-image)  

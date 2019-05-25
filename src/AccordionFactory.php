@@ -19,26 +19,24 @@ class AccordionFactory
     }
 
     /************************************************************************/
-    
-    /**
-     *  Find the number of accordion string occurences in a text
-     *  @param string  $text      
-     *  @return int $ret           
-     **/
 
+    /**
+     *  Find the number of accordion string occurences in a text.
+     *  @param string  $text
+     *  @return int $ret
+     **/
     public function find_number_of_accordion_string_occurences($text)
     {
         return substr_count($text, '{accordion');
     }
 
     /************************************************************************/
-    
-    /**
-     *  Replace accordion strings with template
-     *  @param string  $text      
-     *  @return string $ret           
-     **/
 
+    /**
+     *  Replace accordion strings with template.
+     *  @param string  $text
+     *  @return string $ret
+     **/
     public function replace_accordion_strings_with_template($text)
     {
         // Add to the accordion template the icon kind
@@ -62,20 +60,20 @@ class AccordionFactory
 
         return $text;
     }
-    
+
     /************************************************************************/
-    
+
     /**
      *  Return the text with the accordions HTML instead of the found snippets.
-     *  @param array  $text      
+     *  @param array  $text
      *  @param string $icon_kind
-     *  @return array $ret           
+     *  @return array $ret
      **/
-    public function getAccordions($text, string $icon_kind = ''){
-        
-        $accordion = new AccordionFactory($icon_kind);
+    public function getAccordions($text, string $icon_kind = '')
+    {
+        $accordion = new self($icon_kind);
         $ret = $accordion->replace_accordion_strings_with_template($text);
-        
+
         return $ret;
     }
 }
