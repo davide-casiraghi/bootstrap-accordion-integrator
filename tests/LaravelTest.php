@@ -31,7 +31,7 @@ class LaravelTest extends TestCase
         $testExtension = BootstrapAccordion::find_number_of_accordion_string_occurences($this->body);
         $this->assertStringContainsString($testExtension, 2);
     }
-    
+
     /** @test */
     public function it_replace_accordion_strings_with_template_using_facade()
     {
