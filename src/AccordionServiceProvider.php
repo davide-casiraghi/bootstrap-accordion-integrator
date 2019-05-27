@@ -1,8 +1,8 @@
 <?php
 
 namespace DavideCasiraghi\BootstrapAccordion;
+
 use Illuminate\Support\ServiceProvider;
-use DavideCasiraghi\BootstrapAccordion\BootstrapAccordion;
 
 class AccordionServiceProvider extends ServiceProvider
 {
