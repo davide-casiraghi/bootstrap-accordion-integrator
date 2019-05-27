@@ -21,8 +21,8 @@ class AccordionServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('accordion', function () {
-            return new AccordionFactory();
+        $this->app->bind('bootstrap-accordion', function () {
+            return new BootstrapAccordion();
         });
     }
 }

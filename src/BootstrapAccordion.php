@@ -2,7 +2,7 @@
 
 namespace DavideCasiraghi\BootstrapAccordion;
 
-class AccordionFactory
+class BootstrapAccordion
 {
     protected $icon_kind = 'caret-svg';
 
@@ -65,12 +65,13 @@ class AccordionFactory
 
     /**
      *  Return the text with the accordions HTML instead of the found snippets.
-     *  @param array  $text
+     *  @param string  $text
      *  @param string $icon_kind
-     *  @return array $ret
+     *  @return string $ret
      **/
     public function getAccordions($text, string $icon_kind = '')
     {
+        //dd("asa b66");
         $accordion = new self($icon_kind);
         $ret = $accordion->replace_accordion_strings_with_template($text);
 

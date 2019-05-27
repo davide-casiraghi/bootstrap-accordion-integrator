@@ -45,7 +45,7 @@ composer require davide-casiraghi/bootstrap-accordion-integrator
 To replace all the occurrance of the accordion snippets:
 
 ```php
-$accordion = new AccordionFactory('caret-svg');
+$accordion = new BootstrapAccordion('caret-svg');
 $accordion->replace_accordion_strings_with_template($text);
 ```
 

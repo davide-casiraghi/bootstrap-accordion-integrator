@@ -8,6 +8,6 @@ class BootstrapAccordion extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'accordion';
+        return 'bootstrap-accordion';
     }
 }
