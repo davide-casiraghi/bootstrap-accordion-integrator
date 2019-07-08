@@ -39,6 +39,12 @@ To use the package you should import it trough composer.
 composer require davide-casiraghi/bootstrap-accordion-integrator
 ```
 
+### Import the scss files
+Add this line to your **resources/sass/app.scss** file:  
+```@import 'vendor/bootstrap-accordion-integrator/accordion';```   
+and then run in console:  
+```npm run dev```  
+
 
 ## Usage
 
